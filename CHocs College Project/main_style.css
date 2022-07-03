@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    position: fixed;
+    z-index: 5;
+}
+
+.nav {
+    box-sizing: border-box;
+    padding: 8px 5%;
+    align-items: center;
+    background-color: #704E2E;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+}
+
+.menu {
+    padding: 0 3px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #F0E7DD;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.menu li a:hover {
+    opacity: 0.5;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.exp {
+    display: block;
+    left: 20px;
+    height: 3px;
+    width: 40px;
+    margin: 10px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #F0E7DD;
+}
+
+@media(max-width:800px){
+    .burger{
+        display: block;
+    }
+
+    .burger.open .exp:nth-child(2){
+        opacity: 0;
+    }
+
+    .burger.open .exp:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger.open .exp:nth-child(3){
+        transform: translateY(-18px) rotate(-45deg);
+    }
+
+    .menu{
+        position: fixed;
+        left: -200%;
+        top: 65px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #F0E7DD;
+        width: 100%;
+        text-align: left;
+        transition: 0.4s;
+    }
+
+    .menu li {
+        margin: 22px 0;
+    }
+
+    .menu li a{
+        color: #000;
+    }
+
+    .menu.open {
+        left: 0;
+    }
+
+    .logo_container {
+        size: 50px;
+    }
+}
+
+.logo_container img {
+    height: 45px;
+}
+
+main {
+    background-color: #F0E7DD;
+}
+
+/* FOOTER */
+
+footer li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.foot_top {
+    background-color: #F0E7DD;
+    padding: 0 20px;
+}
+
+.foot_top hr {
+    border: 0;
+    height: 4px;
+    background-color: #704E2E;
+}
+
+.box {
+    display: flex;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.box div {
+    min-width: 50%;
+}
+
+.box li a {
+    color: black;
+}
+
+.box li{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.foot_bottom {
+    background-color: #CCD6DD;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.foot_bottom img {
+    width: 40px;
+}
+
+.foot_bottom p {
+    padding-top: 10px;
+    color: black;
+}

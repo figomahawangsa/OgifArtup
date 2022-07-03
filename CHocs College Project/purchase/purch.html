@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CHocs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main_style.css">
+    <link rel="stylesheet" href="purch_style.css">
+    <script defer src="purch.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="burger">
+                <div class="exp"></div>
+                <div class="exp"></div>
+                <div class="exp"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="../products/prod.html">Our Products</a></li>
+                <li><a href="../purchase/purch.html">Purchase</a></li>
+                <li><a href="../about/about.html">About Us</a></li>
+                <li><a href="../location/loc.html">Location</a></li>
+            </ul>
+            <div class="logo_container">
+                <a href="../home/home.html"><img src="../img/Logo-CHocs-Trs.png" alt="logo"></a>
+            </div>
+        </nav>
+        <script src="../main.js"></script>
+    </header>
+
+    <main>
+        <div class="f">
+            <form id="form" action="purch2.html" method="GET">
+                <h1>Purchase</h1>
+                <div class="name">
+                    <label for="name"><h3>Full name</h3>
+                        <input id="name" type="text" placeholder="Ex : James Bond">
+                    </label>
+                </div>
+    
+                <div class="adr">
+                    <label for="name"><h3>Address</h3>
+                        <input id="adr" type="text" placeholder="Country, City, Street Address, Postcode">
+                        <textarea name="" id="" placeholder="Address Detail (Optional) Ex : House Wall Color"></textarea>
+                    </label>
+                </div>
+    
+                <div class="num">
+                    <label for="name"><h3>Phone Number</h3>
+                        <input id="phoneNum" type="text" placeholder="Ex : 081234567891">
+                    </label>
+                </div>
+    
+                <div class="email">
+                    <label for="name"><h3>Email Address</h3>
+                        <input id="email" type="email" placeholder="Ex : james.bond@gmail.com">
+                    </label>
+                </div>
+    
+                <div class="date">
+                    <label for="name"><h3>Delivery Date</h3>
+                        <input id="date" type="Date">
+                    </label>
+                </div>
+    
+                <div class="prod">
+                    <h3>Choose Products</h3>
+                    <div class="container">
+                        <div class="cont">
+                            <label for="prod1">
+                                <div class="check">
+                                    <input type="checkbox" name="prod1" id="prod1">
+                                    <div class="check_txt">
+                                        <h3>Chocolate Bricks</h3>
+                                        <p>Rp 200.000</p>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <button type="button" id="minus1" onclick="decrement1()">-</button>
+                                    <h3 id="itemQuantity1" onchange="sumTotal()"></h3>
+                                    <button type="button" id="plus1" onclick="increment1()">+</button>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class="container">
+                        <div class="cont">
+                            <label for="prod2">
+                                <div class="check">
+                                    <input type="checkbox" name="prod2" id="prod2">
+                                    <div class="check_txt">
+                                        <h3>Chocolate Blocks</h3>
+                                        <p>Rp 150.000</p>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <button type="button" onclick="decrement2()">-</button>
+                                    <h3 id="itemQuantity2"></h3>
+                                    <button type="button" onclick="increment2()">+</button>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class="container">
+                        <div class="cont">
+                            <label for="prod3">
+                                <div class="check">
+                                    <input type="checkbox" name="prod3" id="prod3">
+                                    <div class="check_txt">
+                                        <h3>Chocolate Balls</h3>
+                                        <p>Rp 25.000</p>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <button type="button" onclick="decrement3()">-</button>
+                                    <h3 id="itemQuantity3"></h3>
+                                    <button type="button" onclick="increment3()">+</button>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class="container">
+                        <div class="cont">
+                            <label for="prod4">
+                                <div class="check">
+                                    <input type="checkbox" name="prod4" id="prod4">
+                                    <div class="check_txt">
+                                        <h3>Chocolate Cookies</h3>
+                                        <p>Rp 50.000</p>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <button type="button" onclick="decrement4()">-</button>
+                                    <h3 id="itemQuantity4"></h3>
+                                    <button type="button" onclick="increment4()">+</button>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class="container">
+                        <div class="cont">
+                            <label for="prod5">
+                                <div class="check">
+                                    <input type="checkbox" name="prod5" id="prod5">
+                                    <div class="check_txt">
+                                        <h3>Various Chocolate</h3>
+                                        <p>Rp 75.000</p>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <button type="button" onclick="decrement5()">-</button>
+                                    <h3 id="itemQuantity5"></h3>
+                                    <button type="button" onclick="increment5()">+</button>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class="container">
+                        <div class="cont">
+                            <label for="prod6">
+                                <div class="check">
+                                    <input type="checkbox" name="prod6" id="prod6">
+                                    <div class="check_txt">
+                                        <h3>Chocolate Ice Cream</h3>
+                                        <p>Rp 86.000</p>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <button type="button" onclick="decrement6()">-</button>
+                                    <h3 id="itemQuantity6"></h3>
+                                    <button type="button" onclick="increment6()">+</button>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class="container">
+                        <div class="cont">
+                            <label for="prod7">
+                                <div class="check">
+                                    <input type="checkbox" name="prod7" id="prod7">
+                                    <div class="check_txt">
+                                        <h3>Chocolate Brownies</h3>
+                                        <p>Rp 95.000</p>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <button type="button" onclick="decrement7()">-</button>
+                                    <h3 id="itemQuantity7"></h3>
+                                    <button type="button" onclick="increment7()">+</button>
+                                </div>
+                            </label>
+                        </div>
+    
+                    </div>
+    
+                    <div class="container">
+                        <div class="cont">
+                            <label for="prod8">
+                                <div class="check">
+                                    <input type="checkbox" name="prod8" id="prod8">
+                                    <div class="check_txt">
+                                        <h3>Chocolate Cake</h3>
+                                        <p>Rp 105.000</p>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <button type="button" onclick="decrement8()">-</button>
+                                    <h3 id="itemQuantity8"></h3>
+                                    <button type="button" onclick="increment8()">+</button>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class="container">
+                        <div class="cont">
+                            <label for="prod9">
+                                <div class="check">
+                                    <input type="checkbox" name="prod9" id="prod9">
+                                    <div class="check_txt">
+                                        <h3>Chocolate Donut</h3>
+                                        <p>Rp 60.000</p>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <button type="button" onclick="decrement9()">-</button>
+                                    <h3 id="itemQuantity9"></h3>
+                                    <button type="button" onclick="increment9()">+</button>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="cont">
+                            <label for="prod10">
+                                <div class="check">
+                                    <input type="checkbox" name="prod10" id="prod10">
+                                    <div class="check_txt">
+                                        <h3>Chocolate Muffin</h3>
+                                        <p>Rp 60.000</p>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <button type="button" onclick="decrement10()">-</button>
+                                    <h3 id="itemQuantity10"></h3>
+                                    <button type="button" onclick="increment10()">+</button>
+                                </div>
+                            </label>
+                        </div>    
+                    </div>
+                </div>
+                <hr>
+    
+                <div class="submit">
+                    <div id="errorMsg"></div>
+                    <button type="submit" id="order"><h3>Order</h3></button>
+                </div>
+               
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot_top">
+            <hr>
+            <div class="box">
+                <div class="box_r">
+                    <div id="box_mid">
+                        <ul>
+                            <li><a href="../home/home.html">Home</a></li>
+                            <li><a href="../products/prod.html">Products</a></li>
+                            <li><a href="../purchase/purch.html">Purchase</a></li>
+                            <li><a href="../location/loc.html">Location</a></li>
+                            <li><a href="../about/about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_r">
+                    <div id="box_mid">
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Youtube</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot_bottom">
+            <a href="../home/home.html"><img src="../img/Logo-CHocs-Trs.png" alt="logo"></a>
+            <p>© 2022 CHocs Chocolate Company</p>
+        </div>
+    </footer>
+</body>
+</html>

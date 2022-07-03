@@ -1,0 +1,76 @@
+main {
+    margin-top: 65px;
+    padding: 70px 5%;
+}
+
+.loc_outer_box {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.loc_box {
+    height: 590px;
+    width: 60%;
+}
+
+.loc_box2 {
+    width: 40%;
+    background-color: white;
+}
+
+#loc_img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#loc_right {
+    padding: 50px 2%;
+    height: auto;
+}
+
+.loc_txt p {
+    padding-bottom: 10px;
+}
+
+.loc_txt h2 {
+    padding-bottom: 20px;
+}
+
+.loc_txt {
+    height: 40%;
+}
+
+.map iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.map {
+    height: 60%;
+}
+
+@media(max-width:800px){
+    .loc_outer_box {
+        display: block;
+    }
+
+    .loc_box {
+        height: 300px;
+        width: 100%;
+    }
+
+    .map iframe {
+        padding-top: 30px;
+        height: 80%;
+    }
+
+    .loc_box2 {
+        width: auto;
+    }
+
+    #loc_right {
+        height: 400px;
+        padding: 20px 5%;
+    }
+}

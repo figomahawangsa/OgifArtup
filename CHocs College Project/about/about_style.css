@@ -1,0 +1,184 @@
+main {
+    margin-top: 65px;
+}
+
+.title {
+    background-color: #786851;
+}
+
+.title h1 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #F0E7DD;
+    padding: 30px;
+    text-align: center;
+}
+
+#introImage {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.part {
+    margin: 70px 70px 0 70px;
+    background-color: white;
+    height: 300px;
+    display: flex;
+}
+
+#top h2, #top p {
+    text-align: end;
+}
+
+.part h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.part p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.txt {
+    width: 70%;
+    height: 300px;
+    padding: 40px 3%;
+}
+
+.img {
+    width: 30%;
+    height: 300px;
+}
+
+.img img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.ing {
+    padding: 70px;
+}
+
+#ing_title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.showcase {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.showimg img{
+    object-fit: cover;
+    height: 300px;
+    width: 400px;
+}
+
+.showtxt {
+    display: flex;
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #F0E7DD;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.showtxt:hover{
+    opacity: 1;
+}
+
+@media(max-width:1300px) {
+    .showimg img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .showtxt {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media(max-width:1000px) {
+    .showimg img {
+        width: 230px;
+        height: 300px;
+    }
+
+    .showtxt {
+        width: 230px;
+        height: 300px;
+    }
+}
+
+@media(max-width:800px) {
+    .part {
+        margin: 30px 5% 0 5%;
+        background-color: white;
+        height: auto;
+        display: block;
+    }
+
+    #top h2, #top p {
+        text-align: start;
+    }
+    
+    .part h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .part p {
+        font-size: 16px;
+    }
+    
+    .txt {
+        width: auto;
+        height: auto;
+        padding: 20px 5%;
+    }
+    
+    .img {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .img img {
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+    }
+
+    .showcase {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .showimg {
+        margin-bottom: 10px;
+    }
+
+    .showimg img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .showtxt {
+        width: 400px;
+        height: 300px;
+        opacity: 1;
+    }
+}
