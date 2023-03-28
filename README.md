@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @OgifArtup
 - 👀 I’m interested in coding stuff.
-- 🌱 I’m currently learning programming as a Computer Science major.
+- 🌱 I’m currently learning programming as a Computer Science student.
 
 <!---
 OgifArtup/OgifArtup is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
